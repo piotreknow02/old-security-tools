@@ -2,9 +2,9 @@ FROM ubuntu:14.04
 
 WORKDIR /
 
-ENV LANG en_US.UTF-8
-ENV XTERM_LLOCALE en_US.UTF-8
-ENV LC_COLLATE C
+ENV LANG="en_US.UTF-8"
+ENV XTERM_LLOCALE="en_US.UTF-8"
+ENV LC_COLLATE="C"
 
 RUN apt-get update
 RUN apt-get install -y build-essential git-core cmake libssl-dev
