@@ -18,10 +18,6 @@ group "default" {
     "org.opencontainers.image.authors" = join(",", authors)
     "org.opencontainers.image.source" = source
   }
-  platforms = [
-    "linux/amd64",
-    "linux/arm64",
-  ]
 }
 
 target "littleblackbox" {
@@ -31,6 +27,10 @@ target "littleblackbox" {
   labels = {
     "org.opencontainers.image.documentation" = "${source}/blob/main/littleblackbox/README.md"
   }
+  platforms = [
+    "linux/amd64",
+    "linux/arm64",
+  ]
 }
 
 target "rdp-replay" {
@@ -40,4 +40,7 @@ target "rdp-replay" {
   labels = {
     "org.opencontainers.image.documentation" = "${source}/blob/main/rdp-replay/README.md"
   }
+  platforms = [
+    "linux/amd64",
+  ]
 }
